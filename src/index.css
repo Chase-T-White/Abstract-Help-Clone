@@ -1,13 +1,86 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --clr-cta: #4c5fd5;
+  --clr-accent: #dadbf1;
+
+  --clr-black: #000;
+  --clr-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 8rem;
+}
+
+h5,
+p {
+  font-size: 2.4rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.5em 4em;
+  list-style: none;
+}
+
+.btn {
+  font-size: 1.8rem;
+  padding: 0.25em 1em;
+  border-radius: 0.5rem;
+}
+
+.btn--request {
+  border: 0.2rem solid var(--clr-accent);
+}
+
+.btn--login {
+  background-color: var(--clr-cta);
+  border: 0.2rem solid var(--clr-cta);
+}
+
+.more-btn {
+  font-size: 2rem;
+  border: none;
+  color: var(--clr-cta);
+  background: none;
+}
+
+.icon {
+  font-size: 6.4rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }

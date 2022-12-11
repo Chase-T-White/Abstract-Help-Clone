@@ -1,0 +1,27 @@
+.features {
+  display: grid;
+  grid-template-columns: minmax(1em, 30rem) repeat(2, 1fr) minmax(1em, 30rem);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 10rem;
+
+  padding: 20em 0;
+}
+
+.row {
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.feature {
+  display: flex;
+  gap: 3rem;
+}
+
+.feature__text > * {
+  margin-bottom: 2rem;
+}
+
+.feature__text button {
+  margin-bottom: 0;
+}
